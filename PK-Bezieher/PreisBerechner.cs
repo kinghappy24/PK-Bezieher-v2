@@ -8,6 +8,39 @@ namespace PK_Bezieher
 {
     internal class PreisBerechner 
     {
-        public double KalkulationPreis;
+        public double KalkulationPreis(DateTime Eintritt, DateTime? Austritt, double PreisProMinute)
+
+        {
+
+
+            DateTime AustrittsZeit;
+
+            if (Austritt != null)
+            {
+                AustrittsZeit = Austritt.Value;
+            }
+
+            else
+            {
+                AustrittsZeit = DateTime.Now;
+            }
+
+
+           
+
+           TimeSpan Dauer = AustrittsZeit - Eintritt;
+
+            Double AnzahlMinuten = Math.Ceiling(Dauer.TotalMinutes);
+
+            double EndPreis = AnzahlMinuten * PreisProMinute;
+
+            return EndPreis;
+
+
+        }
+
+        
+
+
     }
 }
