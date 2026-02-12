@@ -8,6 +8,6 @@ namespace PK_Bezieher
 {
     internal class PreisBerechner 
     {
-        public double KalkulationPreis (Dauer)
+        public double KalkulationPreis;
     }
 }
