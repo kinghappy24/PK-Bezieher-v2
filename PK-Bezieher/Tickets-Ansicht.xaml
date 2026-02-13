@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PK_Bezieher.Tickets_Ansicht"
+             Title="Ticket-Ansicht">
+
+    <VerticalStackLayout Padding="20" Spacing="12">
+        <Label x:Name="Meldung"
+               Text="Lade..."
+               FontSize="16" />
+
+        <Button Text="Refresh"
+                Clicked="Refresh_Clicked" 
+				HorizontalOptions="Fill"  />
+
+		<Button Text="Kasse"
+			   Clicked="Bezahlen_Clicked" 
+			   HorizontalOptions="Fill"  />
+		
+		
+        <Label x:Name="Dauer"
+               Text=""
+               FontSize="16" />
+
+        <Label x:Name="Preis"
+               Text=""
+               FontSize="16" />
+
+    </VerticalStackLayout>
+
+</ContentPage>

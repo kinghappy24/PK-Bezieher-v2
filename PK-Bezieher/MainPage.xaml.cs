@@ -9,22 +9,15 @@
             InitializeComponent();
         }
 
-        public PH_Logik Logik = new PH_Logik();
-        public Tickets GezogenerTicket;
+        private PH_Logik Logik = new PH_Logik();
+        private Tickets GezogenerTicket;
 
 
         public async void TicketZiehen_Clicked(object sender ,EventArgs e)
         {
-            Tickets ticket = new Tickets();
-            ticket.Id = Guid.NewGuid();
-            ticket.Eintritt = DateTime.Now;
-            ticket.Bezhalt = false;
+            Logik.TicketZiehen();
 
-            await DisplayAlert(
-                "Ticket",
-                " sie haben Ihr Ticket gezogen am " + ticket.Eintritt + "Eingetretten",
-                "danke"
-                );
+            await Navigation.PushAsync(new Tickets_Ansicht());
 
 
         }

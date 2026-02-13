@@ -8,7 +8,7 @@ namespace PK_Bezieher
 {
     internal class Tariff
     {
-        public double PreisProMinute { get; set; } = 0.015;
+        public double PreisProMinute { get; set; } = 0.015; // zum testen vielleicht auf sekunden statt minuten um zu sehen ob es klappt ( für 2te runde dann )
 
 
     }

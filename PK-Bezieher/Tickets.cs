@@ -15,7 +15,7 @@ namespace PK_Bezieher
         public DateTime Eintritt { get; set; }
         public DateTime? Austritt { get; set; }
 
-        public bool Bezhalt { get; set; }
+        public bool Bezahlt { get; set; }
 
 
         
