@@ -3,7 +3,7 @@ Parkhaus Ticket System
  Beschreibung
 
 Dieses Projekt simuliert ein Ticketsystem für ein Parkhaus.
-Wenn ein Fahrzeug einfahren möchte, prüft das System, ob ein Parkplatz frei ist, und erstellt automatisch ein Ticket mit Einfahrtszeit und Ticketnummer.
+Wenn ein Fahrzeug einfahren möchte, wird ein Ticket erstellt mit Einfahrtszeit und Ticketnummer.
 
 
  Funktionen
