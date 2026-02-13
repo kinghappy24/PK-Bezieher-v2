@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PK_Bezieher.Tickets_Ansicht"
+             Title="Ticket-Ansicht">
+
+	<VerticalStackLayout Padding="20" Spacing="16">
+
+		<Label Text="Ticket" Style="{StaticResource Titel}" />
+
+		<Frame Style="{StaticResource Area}">
+			<VerticalStackLayout Spacing="10">
+
+				<Label x:Name="Meldung"
+					   Text="Lade..."
+					   Style="{StaticResource Text}" />
+
+				<Label Text="Dauer"
+					   Style="{StaticResource Text}" />
+
+				<Label x:Name="Dauer"
+					   Text="00:00:00"
+					   FontSize="32"
+					   FontAttributes="Bold"
+					   TextColor="{StaticResource TextMain}" />
+
+				<Label Text="Preis"
+					   Style="{StaticResource Text}" />
+
+				<Label x:Name="Preis"
+					   Text="CHF 0.00"
+					   FontSize="32"
+					   FontAttributes="Bold"
+					   TextColor="{StaticResource Mint}" />
+
+				<Button Text="Refresh"
+        Clicked="Refresh_Clicked"
+        Style="{StaticResource StandartButton}" />
+				
+				
+
+
+			</VerticalStackLayout>
+		</Frame>
+
+	</VerticalStackLayout>
+
+
+</ContentPage>

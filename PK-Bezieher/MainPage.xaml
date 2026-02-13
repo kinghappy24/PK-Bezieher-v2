@@ -4,28 +4,26 @@
              x:Class="PK_Bezieher.MainPage">
 
     <ScrollView>
-        <VerticalStackLayout
-            Padding="30,0"
-            Spacing="25">
-            
-            <Label
-                Text="Hallo"
-                Style="{StaticResource Headline}"
-                SemanticProperties.HeadingLevel="Level1" />
+        <VerticalStackLayout 
+         Padding="20" Spacing="16">
 
-            <Label
-                Text="Bitte ziehe ein Ticket Für dein Fahrzeug"
-                Style="{StaticResource SubHeadline}"
-                SemanticProperties.HeadingLevel="Level2"
-                SemanticProperties.Description="Welcome to dot net Multi platform App U I" />
+            <Label Text="Parkhaus" Style="{StaticResource Titel}" />
 
-            <Button
-                x:Name="CounterBtn"
-                Text="Drücke zum ticket ziehen" 
-                SemanticProperties.Hint="Counts the number of times you click"
-                Clicked="TicketZiehen_Clicked"
-                HorizontalOptions="Fill" />
+            <Frame Style="{StaticResource Area}">
+                <VerticalStackLayout Spacing="8">
+                    <Label Text="Status" Style="{StaticResource Text}" />
+                    <Label x:Name="HomeStatus"
+                   Text="Du besitzt aktuell noch kein Ticket für dein Fahrzeug"
+                   Style="{StaticResource Text}" />
+                </VerticalStackLayout>
+            </Frame>
+
+            <Button Text="Ticket ziehen"
+            Clicked="TicketZiehen_Clicked"
+            Style="{StaticResource StandartButton}" />
+
         </VerticalStackLayout>
+
     </ScrollView>
 
 </ContentPage>

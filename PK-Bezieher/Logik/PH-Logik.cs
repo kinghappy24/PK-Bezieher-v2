@@ -1,11 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace PK_Bezieher
+namespace PK_Bezieher.Logik
+
 {
     internal class PH_Logik
     {
@@ -41,6 +41,8 @@ namespace PK_Bezieher
         { 
             ticket.Austritt = DateTime.Now;
             ticket.Bezahlt = true;
+            // damit der Timer wieder auf 0 zuruck Khert
+            GezogenerTicket = null;
 
         }
 

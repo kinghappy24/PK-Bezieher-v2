@@ -69,10 +69,10 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <MauiXaml Update="Tickets-Ansicht.xaml">
+	  <MauiXaml Update="Views\Tickets-Ansicht.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="Zahlung.xaml">
+	  <MauiXaml Update="Views\Zahlung.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	</ItemGroup>

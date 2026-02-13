@@ -1,4 +1,4 @@
-﻿using System;
+﻿using PK_Bezieher.Logik;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -17,7 +17,7 @@ namespace PK_Bezieher
 
         protected override void OnAppearing()
         {
-            base.OnAppearing(); // beim click aktualisierend
+            base.OnAppearing(); // beim click aktualisieren
 
             var ticket = PH_Logik.GezogenerTicket;
 
@@ -68,6 +68,7 @@ namespace PK_Bezieher
 
             Total.Text = $"Endpreis: {preis:0.00} CHF";
             Ergebnis.Text = "Bezahlt.";
+            PH_Logik.GezogenerTicket = null;
         }
     }
 }

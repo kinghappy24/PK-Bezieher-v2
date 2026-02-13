@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PK_Bezieher.Zahlung"
+             Title="Zahlung">
+
+	<VerticalStackLayout Padding="20" Spacing="16">
+
+		<Label Text="Kasse" Style="{StaticResource Titel}" />
+
+		<Frame Style="{StaticResource Area}">
+			<VerticalStackLayout Spacing="10">
+				<Label x:Name="Details"
+					   Text="Lade..."
+					   Style="{StaticResource Text}" />
+			</VerticalStackLayout>
+		</Frame>
+
+		<Frame Style="{StaticResource Area}">
+			<VerticalStackLayout Spacing="6">
+				<Label Text="Endpreis"
+					   Style="{StaticResource Text}" />
+
+				<Label x:Name="Total"
+					   Text="CHF 0.00"
+					   FontSize="32"
+					   FontAttributes="Bold"
+					   TextColor="{StaticResource Mint}" />
+			</VerticalStackLayout>
+		</Frame>
+
+		<Button Text="Jetzt bezahlen"
+				Clicked="Bezahlen_Clicked"
+				Style="{StaticResource StandartButton}" />
+
+		<Label x:Name="Ergebnis"
+			   Style="{StaticResource Text}" />
+
+		
+
+
+	</VerticalStackLayout>
+
+
+</ContentPage>

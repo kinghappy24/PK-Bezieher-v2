@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace PK_Bezieher
+namespace PK_Bezieher.Logik
 {
     internal class Tariff
     {

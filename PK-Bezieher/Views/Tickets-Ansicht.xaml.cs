@@ -1,4 +1,5 @@
-﻿using System;
+﻿using PK_Bezieher.Logik;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -28,8 +29,8 @@ namespace PK_Bezieher
             if (ticket == null) // check / meldung wenn user kein ticket hat.
             {
                 Meldung.Text = "Du musst zuerst ein Ticket Ziehen"; 
-                Dauer.Text = "";
-                Preis.Text = "";
+                Dauer.Text = "Dauer: 00:00:00";
+                Preis.Text = "Preis: 0.00 CHF";
                 return;
             }
 
